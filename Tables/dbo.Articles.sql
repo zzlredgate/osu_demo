@@ -8,7 +8,8 @@ CREATE TABLE [dbo].[Articles]
 [PublishDate] [datetime] NULL,
 [ModifiedDate] [datetime] NULL,
 [URL] [char] (200) COLLATE Latin1_General_CI_AS NULL,
-[Comments] [int] NULL
+[Comments] [int] NULL,
+[who] [nvarchar] (50) COLLATE Latin1_General_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Articles] ADD CONSTRAINT [PK_Article] PRIMARY KEY CLUSTERED  ([ArticlesID]) ON [PRIMARY]
