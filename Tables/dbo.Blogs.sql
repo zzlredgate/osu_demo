@@ -4,7 +4,8 @@ CREATE TABLE [dbo].[Blogs]
 [AuthorID] [int] NULL,
 [Title] [char] (142) COLLATE Latin1_General_CI_AS NULL,
 [Article] [varchar] (max) COLLATE Latin1_General_CI_AS NULL,
-[PublishDate] [datetime] NULL
+[PublishDate] [datetime] NULL,
+[twitterID] [nvarchar] (50) COLLATE Latin1_General_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Blogs] ADD CONSTRAINT [PK__Blogs__C03C1E467AEB09A9] PRIMARY KEY CLUSTERED  ([BlogsID]) ON [PRIMARY]
